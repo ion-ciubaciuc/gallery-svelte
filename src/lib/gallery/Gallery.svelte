@@ -17,7 +17,7 @@
 
 	const handleClick = (index: number) => {
 		currentIndex = mod(index, items.length);
-		sliderRef?.scroll({
+		sliderRef?.scrollTo({
 			left: sliderRef.clientWidth * currentIndex
 		});
 	};
